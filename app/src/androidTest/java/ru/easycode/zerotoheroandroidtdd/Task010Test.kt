@@ -54,8 +54,8 @@ class Task010Test {
         onView(withId(R.id.titleTextView)).check(doesNotExist())
         onView(withId(R.id.removeButton)).check(matches(isNotEnabled()))
 
-//        activityScenarioRule.scenario.recreate()
-//        onView(withId(R.id.titleTextView)).check(doesNotExist())
-//        onView(withId(R.id.removeButton)).check(matches(isNotEnabled()))
+        activityScenarioRule.scenario.recreate()
+        onView(withId(R.id.titleTextView)).check(doesNotExist())
+        onView(withId(R.id.removeButton)).check(matches(isNotEnabled()))
     }
 }
